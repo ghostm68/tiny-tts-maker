@@ -682,12 +682,12 @@ export class PocketTTSStreaming {
         this.elements.statTTFB.textContent = Math.round(ms);
         const percentage = Math.min((ms / 2000) * 100, 100);
         this.elements.ttfbBar.style.width = `${percentage}%`;
-        this.elements.ttfbBar.style.background = ms < 500 ? "#00d4aa" : ms < 1000 ? "#ffd93d" : "#ff6b6b";
+        this.elements.ttfbBar.style.background = ms < 500 ? "#ff0000" : ms < 1000 ? "#ffffff" : "#ff0000";
     }
 
     updateRTFx(val) {
         this.elements.statRTFx.textContent = `${val.toFixed(2)}x`;
-        this.elements.rtfxContext.style.color = val >= 1.0 ? "#00d4aa" : "#ff6b6b";
+        this.elements.rtfxContext.style.color = val >= 1.0 ? "#ffffff" : "#ff0000";
     }
 
     setupVisualization() {
@@ -738,7 +738,7 @@ export class PocketTTSStreaming {
 
         ctx.clearRect(0, 0, width, height);
         ctx.lineWidth = 2;
-        ctx.strokeStyle = "#00d4aa";
+        ctx.strokeStyle = "#ff0000";
         ctx.beginPath();
 
         const sliceWidth = width / dataArray.length;
@@ -772,8 +772,8 @@ export class PocketTTSStreaming {
             const barHeight = (average / 255) * height * 0.8;
 
             const gradient = ctx.createLinearGradient(0, height, 0, height - barHeight);
-            gradient.addColorStop(0, "#3eb48944");
-            gradient.addColorStop(1, "#7fffd4cc");
+            gradient.addColorStop(0, "#ff000044");
+            gradient.addColorStop(1, "#ff0000cc");
             ctx.fillStyle = gradient;
 
             const x = i * barWidth;
