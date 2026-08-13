@@ -5,37 +5,37 @@
 
 /* Design Tokens */
 :root {
-    /* Colors - Digital Mint Monochromatic */
-    --color-void: #0a1612;
-    --color-deep: #0d1f1a;
-    --color-surface: rgba(20, 45, 38, 0.85);
-    --color-surface-elevated: rgba(30, 65, 55, 0.9);
-    --color-glass-border: rgba(144, 238, 200, 0.12);
+    /* Colors - Red, White & Black */
+    --color-void: #0a0a0a;
+    --color-deep: #111111;
+    --color-surface: rgba(20, 20, 20, 0.85);
+    --color-surface-elevated: rgba(30, 30, 30, 0.9);
+    --color-glass-border: rgba(255, 255, 255, 0.12);
 
-    /* Mint Gradient Spectrum */
-    --gradient-primary: linear-gradient(135deg, #3eb489 0%, #00d4aa 50%, #7fffd4 100%);
-    --gradient-primary-vivid: linear-gradient(135deg, #5eedb8 0%, #00ffcc 100%);
-    --gradient-glow: linear-gradient(135deg, rgba(62, 180, 137, 0.4) 0%, rgba(0, 212, 170, 0.4) 100%);
-    --gradient-soft: linear-gradient(135deg, rgba(127, 255, 212, 0.08) 0%, rgba(62, 180, 137, 0.08) 100%);
+    /* Red Gradient Spectrum */
+    --gradient-primary: linear-gradient(135deg, #ff0000 0%, #cc0000 50%, #990000 100%);
+    --gradient-primary-vivid: linear-gradient(135deg, #ff3333 0%, #ff0000 100%);
+    --gradient-glow: linear-gradient(135deg, rgba(255, 0, 0, 0.4) 0%, rgba(200, 0, 0, 0.4) 100%);
+    --gradient-soft: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 0, 0, 0.08) 100%);
 
-    /* Accent Colors - Mint Spectrum */
-    --color-primary: #3eb489;
-    --color-mint: #00d4aa;
-    --color-aquamarine: #7fffd4;
-    --color-seafoam: #98ffc8;
-    --color-glint: #e8fff4;
-    --color-forest: #1a5d4a;
-    --color-teal-dark: #0f3d32;
+    /* Accent Colors - Red Spectrum */
+    --color-primary: #ff0000;
+    --color-mint: #ff0000;
+    --color-aquamarine: #ffffff;
+    --color-seafoam: #ffcccc;
+    --color-glint: #ffffff;
+    --color-forest: #550000;
+    --color-teal-dark: #330000;
 
     /* Semantic Colors */
-    --color-success: #00d4aa;
-    --color-warning: #ffd93d;
-    --color-error: #ff6b6b;
+    --color-success: #ffffff;
+    --color-warning: #ffffff;
+    --color-error: #ff0000;
 
     /* Text */
-    --color-text-primary: #e8fff4;
-    --color-text-secondary: #98c9b8;
-    --color-text-muted: #5a8a7a;
+    --color-text-primary: #ffffff;
+    --color-text-secondary: #ffcccc;
+    --color-text-muted: #888888;
 
     /* Typography - Soft Geometric */
     --font-display: 'Quicksand', 'Nunito', sans-serif;
@@ -61,12 +61,12 @@
     --radius-xl: 28px;
     --radius-full: 9999px;
 
-    /* Shadows - Mint Glow */
-    --shadow-sm: 0 2px 8px rgba(0, 20, 15, 0.4);
-    --shadow-md: 0 4px 20px rgba(0, 20, 15, 0.5);
-    --shadow-lg: 0 8px 40px rgba(0, 20, 15, 0.6);
-    --shadow-glow: 0 0 40px rgba(62, 180, 137, 0.3);
-    --shadow-glow-strong: 0 0 60px rgba(0, 212, 170, 0.4);
+    /* Shadows - Red Glow */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 40px rgba(255, 0, 0, 0.3);
+    --shadow-glow-strong: 0 0 60px rgba(255, 0, 0, 0.4);
 
     /* Transitions */
     --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
